@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(90deg, #621be8, #b609f1, #f902f7);
+}
+
+.error {
+  @apply flex h-screen w-screen flex-col items-center gap-4 text-red-600;
+  .error-redirect {
+    @apply text-white;
+    .error-redirect_link {
+      @apply text-blue-600;
+    }
+  }
+}
