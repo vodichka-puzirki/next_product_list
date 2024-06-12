@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(90deg, #621be8, #b609f1, #f902f7);
+  background: linear-gradient(90deg, #0f0d2a, #2b2b36, #121a1c);
 }
 
 .error {
@@ -13,5 +13,12 @@ body {
     .error-redirect_link {
       @apply text-blue-600;
     }
+  }
+}
+
+.not-found {
+  @apply flex h-screen w-screen flex-col items-center justify-center text-center text-white;
+  .not-found_link {
+    @apply text-blue-400;
   }
 }

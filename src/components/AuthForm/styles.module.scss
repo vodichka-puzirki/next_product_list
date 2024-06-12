@@ -7,11 +7,11 @@
     @apply border-b-2 bg-transparent py-2 outline-none transition-all;
 
     &:focus {
-      @apply border-purple-600;
+      @apply border-gray-600;
     }
     &:focus + .formPlaceholder,
     &.active + .formPlaceholder {
-      @apply -translate-y-6 text-purple-600;
+      @apply -translate-y-6 text-gray-600;
     }
   }
   .formLabel {
@@ -22,10 +22,10 @@
   }
   .formBtn {
     @apply w-full rounded-xl p-1 uppercase text-white;
-    background: linear-gradient(90deg, #621be8, #b609f1, #f902f7);
+    background: linear-gradient(90deg, #0f0d2a, #2b2b36, #121a1c);
 
     &:hover {
-      @apply opacity-70 transition-opacity;
+      @apply opacity-90 transition-opacity;
     }
   }
   .formRedirect {

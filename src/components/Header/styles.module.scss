@@ -1,0 +1,11 @@
+.header {
+  @apply flex items-center justify-between p-4;
+
+  .navigation {
+    @apply flex gap-4 text-xl font-bold uppercase text-white;
+
+    .logout {
+      @apply uppercase text-blue-600;
+    }
+  }
+}

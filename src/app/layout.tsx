@@ -1,12 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 
-import { Loading, ErrorNotification } from '@/components';
 import Provider from './StoreProvider';
 
 import './globals.scss';
+import { Loading, ErrorNotification } from '@/components';
 
-const inter = Inter({ subsets: ['latin'] });
+const montserrat = Montserrat({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Product List',
@@ -18,7 +18,7 @@ type RootLayoutProps = Readonly<{ children: React.ReactNode }>;
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={montserrat.className}>
         <Provider>
           {children}
           <Loading />

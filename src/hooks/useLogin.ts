@@ -16,7 +16,7 @@ export const useLogin = () => {
       const data = await res.json();
 
       if (data.error) {
-        dispatch(setErrorAction(data));
+        dispatch(setErrorAction(data.error));
       } else {
         dispatch(setUserInfoAction(data));
       }

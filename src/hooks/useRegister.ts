@@ -15,13 +15,13 @@ export const useRegister = () => {
       const data = await res.json();
 
       if (data.error) {
-        dispatch(setErrorAction(data));
+        dispatch(setErrorAction(data.error));
       } else {
         dispatch(setUserInfoAction(data));
       }
       return data;
     } catch {
-      const err = { code: 400, message: 'Unknown login error' };
+      const err = { code: 400, message: 'Unknown registration error' };
 
       dispatch(setErrorAction(err));
       return { error: err };

@@ -22,3 +22,21 @@ export type ErrorType = {
 export type ErrorStateType = {
   error: ErrorType;
 };
+
+export type ProductsStateType = {
+  products: ProductType[];
+};
+
+export type ProductType = {
+  description: string;
+  id: string;
+  price: number;
+  title: string;
+  userId: string;
+  image: ImageType;
+};
+
+export type ImageType = {
+  id: string;
+  url: string;
+};

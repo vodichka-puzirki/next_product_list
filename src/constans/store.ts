@@ -10,3 +10,5 @@ export const INITIAL_USER_ID = {
 export const INITIAL_LOADING = false;
 
 export const INITIAL_ERROR = { code: 0, message: '' };
+
+export const INITIAL_PRODUCTS = [];

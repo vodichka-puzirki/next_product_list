@@ -14,7 +14,7 @@ const ErrorPage = ({ error }: ErrorPageProps) => {
       <div className="error-message">{error.message}</div>
       <div className="error-redirect">
         Go to{' '}
-        <Link className="error-redirect_link" href="/home">
+        <Link className="error-redirect_link" href="/">
           home
         </Link>
       </div>

@@ -2,4 +2,5 @@ export * from './Header';
 export * from './AuthForm';
 export * from './Loading';
 export * from './ErrorNotification';
-export * from './NotFound';
+export * from './ProductList';
+export * from './ProductCard';

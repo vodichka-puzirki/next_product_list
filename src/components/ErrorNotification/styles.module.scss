@@ -1,3 +1,11 @@
 .error {
-  @apply absolute right-2 top-2 flex flex-col gap-4 rounded-xl bg-white p-4 text-red-600;
+  @apply fixed right-2 top-2 flex translate-x-40 flex-col gap-4 rounded-xl bg-white p-4 text-center text-red-600 transition-transform;
+
+  &.active {
+    @apply translate-x-0;
+  }
+
+  .errorClose {
+    @apply absolute right-2 top-2 opacity-40;
+  }
 }

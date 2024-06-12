@@ -1,11 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 
-import { auth, error, loading } from './features';
+import { auth, error, loading, productsState } from './features';
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       auth,
+      productsState,
       loading,
       error,
     },

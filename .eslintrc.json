@@ -21,6 +21,7 @@
     "lines-around-directive": ["error", { "before": "always", "after": "never" }],
     "no-param-reassign": "off",
     "react/require-default-props": "off",
-    "react/jsx-no-useless-fragment": "off"
+    "react/jsx-no-useless-fragment": "off",
+    "react-hooks/exhaustive-deps": "off"
   }
 }

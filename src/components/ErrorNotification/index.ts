@@ -1,1 +1,1 @@
-export { default as ErrorNotification } from './Error';
+export { default as ErrorNotification } from './ErrorNotification';
